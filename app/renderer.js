@@ -79,4 +79,8 @@ function docReady(fn) {
 
 docReady(function () {
     var plot = initializePlot();
+
+    document.getElementById('settings').onclick = () => {
+        console.log('Open settings')
+    }
 })
