@@ -1,0 +1,30 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Plotter</title>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+
+    <section class="grid plot-layout" id="plot-layout">
+        <div id="y-label">
+            <h3>I (&mu;A)</h3>
+        </div>
+        <div class="plot" id="plot"></div>
+        <div id="x-label">
+            <h3>Time (s)</h3>
+        </div>
+    </section>
+</body>
+
+</html>

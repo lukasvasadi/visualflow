@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>VisualFlow</title>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" id="settings"><i class="fa-solid fa-gear"></i></a>
+    </header>
+    <main class="grid">
+        <section class="grid plot-layout" id="plot-layout">
+            <div id="y-label">
+                <h3>RPM</h3>
+            </div>
+            <div class="plot" id="plot"></div>
+            <div id="x-label">
+                <h3>Seconds</h3>
+            </div>
+        </section>
+        <section class="grid solenoids">
+            <h2><i class="fa-solid fa-syringe"></i> S1</h2>
+            <h2><i class="fa-solid fa-syringe"></i> S2</h2>
+            <h2><i class="fa-solid fa-syringe"></i> S3</h2>
+        </section>
+    </main>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
