@@ -10,9 +10,11 @@ process.env.NODE_ENV = 'development'
 const isDev = process.env.NODE_ENV !== 'production' ? true : false
 const isMac = process.platform === 'darwin' ? true : false
 
+let mainWindow
+
 const createWindow = () => {
     // create the browser window
-    const mainWindow = new BrowserWindow({
+    mainWindow = new BrowserWindow({
         width: isDev ? 1200 : 960,
         height: 800,
         // use absolute path to prevent issues with packaging
